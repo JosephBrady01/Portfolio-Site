@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'PT Mono', monospace;
+    background-color: white;
+    margin: 0;
+}
+
+.profile {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    animation-name: fadeup;
+    border: 1.7px solid black;
+}
+ 
+.welcome {
+    text-align: center;
+    font-size: 50pt;
+    margin-left: -40%;
+    position: relative;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1::before {
+    background: teal;
+    animation: fadeup 4s ease forwards;
+}
+
+@keyframes fadeup {
+    to { bottom: 100%; }
+}
+
+nav {
+    float: right;
+    width: 10%;
+    height: 10%;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    position: sticky;
+    top: 0px;
+  
+  }
+  
+  nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
+  
+  }
+  
+  a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+  }
+  
+  a:hover { 
+    background: teal;
+    color: white; 
+}
+  
+  a:active { 
+    background: teal; 
+}
+  
+  .navicon {
+    padding: 23px 20px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+  }
+  
+  .navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+  }
+  
+  .navicon div:before,
+  .navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+  }
+  
+  .navicon :hover {
+    background-color: teal;
+    border-radius: 50%;
+  }
+  .navicon div:before { 
+    top: -7px;
+ }
+  
+  .navicon div:after { 
+    top: 7px; 
+}
+
+.image-bg-1{
+  background-image: url(./images/bg-img-1.jpg);
+  min-height: 20vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  background-color: teal;
+  min-height: 30vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.AM-container {
+  text-align: center;
+  background-color: teal;
+  padding: 2vw;
+  font-family: 'Rubik', sans-serif;
+}
+.about-me {
+  font-family: 'Rubik', sans-serif;
+  padding: 2vw;
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.image-bg-2 {
+  background-image: url(./images/bg-img-2.jpg);
+  min-height: 20vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-bg-3{
+  background-image: url(./images/bg-img-3.jpg);
+  min-height: 20vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-links a {
+  background-color: white;
+}
+
+.contact-links a:hover {
+  text-decoration: none;
+}

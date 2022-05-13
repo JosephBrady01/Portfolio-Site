@@ -273,6 +273,14 @@ img {
   opacity: 1;
 }
 
+.demo {
+  text-align: center;
+  margin-left: 5%;
+}
+ .mySlides {
+  margin-left: 38%;
+}
+
   .wireframe-container {
     display: grid;
     grid-template-rows: auto;
